@@ -18,7 +18,7 @@ func sendMessage(messageInput string) {
 
 	ctx := context.Background()
 
-	conn, err := amqp.Dial("amqp://artemis:simetraehcapa@localhost:61616/")
+	conn, err := amqp.Dial("amqp://artemis:simetraehcapa@localhost:5672/")
 	if err != nil {
 		log.Fatal("could notconnect  to AMQP server:", err)
 	}

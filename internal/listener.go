@@ -10,7 +10,7 @@ import (
 func ListenMessage(numberListener int) {
 
 	ctx := context.Background()
-	addr := "amqp://artemis:simetraehcapa@localhost:61616/"
+	addr := "amqp://artemis:simetraehcapa@localhost:5672/"
 
 	conn, err := amqp.Dial(addr)
 	if err != nil {

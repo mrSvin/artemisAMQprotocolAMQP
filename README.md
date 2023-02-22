@@ -5,7 +5,7 @@ This program implements 4 listeners that synchronously process messages from one
 
 ## Deploy Artemis in Docker
 ```
-docker run -d --name artemis -p 8161:8161 -p 61616:61616 vromero/activemq-artemis
+docker run -d --name artemisAMQP -p 8161:5672 -p 61616:61616 vromero/activemq-artemis
 ```
 
 ## Install library github.com/Azure/go-amqp@v0.15.0
